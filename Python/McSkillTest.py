@@ -6,12 +6,6 @@ import sys
 import tkinter as tk
 from tkinter import ttk
 
-# Получаем путь к исполняемому файлу
-if getattr(sys, 'frozen', False):
-    current_path = os.path.dirname(sys.executable)
-else:
-    current_path = os.path.dirname(os.path.abspath(__file__))
-
 jdkUrl = "https://cfdownload.adobe.com/pub/adobe/coldfusion/java/java8/java8u361/jdk/jdk-8u361-windows-x64.zip"
 jarUrl = "https://github.com/DevsyA/McSkill-Better-Test-Launcher/blob/master/alt/McSkillTest.jar?raw=true"
 tempFolder = os.environ["TEMP"] + "\\McSkillTest"
